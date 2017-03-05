@@ -40,7 +40,7 @@ const HEROES: Hero[] = [
              </div>
              `
   ,
-  styles[
+  styles: [
     `
     .selected {
     background-color: #CFD8DC !important;

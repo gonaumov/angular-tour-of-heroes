@@ -17,6 +17,7 @@ var heroes_component_1 = require('./heroes.component');
 var hero_service_1 = require('./hero.service');
 var router_1 = require('@angular/router');
 var dashboard_component_1 = require('./dashboard.component');
+// https://angular.io/docs/ts/latest/tutorial/toh-pt5.html
 var AppModule = (function () {
     function AppModule() {
     }
@@ -38,6 +39,10 @@ var AppModule = (function () {
                         path: '',
                         redirectTo: '/dashboard',
                         pathMatch: 'full'
+                    },
+                    {
+                        path: 'detail/:id',
+                        component: hero_detail_component_1.HeroDetailComponent
                     }
                 ])
             ],

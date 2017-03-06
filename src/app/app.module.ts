@@ -8,6 +8,7 @@ import { HeroService } from './hero.service';
 import { RouterModule }   from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 
+// https://angular.io/docs/ts/latest/tutorial/toh-pt5.html
 @NgModule({
   imports:      [
     BrowserModule,
@@ -25,6 +26,10 @@ import { DashboardComponent } from './dashboard.component';
         path: '',
         redirectTo: '/dashboard',
         pathMatch: 'full'
+      },
+      {
+        path: 'detail/:id',
+        component: HeroDetailComponent
       }
     ])
   ],
